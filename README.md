@@ -16,8 +16,11 @@ PasswordPair passwordPair = CreatePWD.run("123456", 'Z', 'z');
 ```
 
 `CreatePWD.run()`方法需要三个参数：
+
 String password - 明文密码
+
 char saltCode - 密码盐
+
 char saltCode2 - 双重密码盐
 
 其中，盐用于对密码进行进一步的混淆处理，你可以将两个盐值改成任意的单个字符，只要是char类型的即可。也可以直接使用我在上边填写的盐值。
